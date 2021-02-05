@@ -1,0 +1,564 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:&display=swap');
+
+body, html{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+body, header, main{
+    min-width: 280px;
+}
+/*header*/
+#pc{
+    display: none;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(32,32,32);
+    height: 48px;
+    width: 100%;
+}
+.fix1{
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+}
+
+nav{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-width: 200px;
+}
+
+a {
+    display: flex;
+    text-decoration: none;
+}
+
+.left{
+    display: flex;
+    align-items: center;
+    float: left;
+    margin-top: 0.75em;
+    padding-left: 0.5em;
+    
+}
+
+.right{
+    display: flex;
+    align-items: center;
+    float: right;
+    margin-top: 0.75em;
+    padding-left: 0.5em;
+}
+
+.right a{
+    margin-left: 1em;
+    margin-right: 0.5em;    
+}
+
+/*main*/
+main{
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    line-height: 0.5em;
+}
+
+main iframe{
+    width: 100%;
+    height: 233px;
+    margin-bottom: 1em;
+    margin-top: 3em;
+}
+
+main span{
+    color: grey;
+    font-size: 12px;
+}
+
+main h1{
+    font-size: 17px;
+    color: black;
+    font-weight: 100;
+    margin-left: 0.6em;
+}
+
+.content-left span, h1{
+    margin-left: 1em;
+}
+
+.horizontal{
+    margin-top: 1em;
+    display: flex;
+}
+
+.horizontal button{
+    border: none;
+    background-color: transparent;
+    color: gray;
+    font-size: 12px;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.channel img{
+    border-radius: 50%;
+    width: 3em;
+    height: 3em;
+    vertical-align: middle;
+    padding-right: 1em;
+}
+
+.channel button{
+    border: none;
+    background-color: transparent;
+    line-height: 0em;
+    margin-bottom: 1em;
+}
+
+.bt1{
+    color: rgb(204, 0, 0);
+    text-transform: uppercase;
+    font-weight: 600;
+    width: 30%;
+}
+
+.channel{
+    display: inline-flex;
+    width: 100%;
+}
+
+.bt0{
+    width: 70%;
+}
+
+.content-right{
+    display: inline-flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    font-size: 12px;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+}
+
+.content-right img{
+    width: 40%;
+    margin-bottom: 0.5em;
+}
+
+.content-right span{
+    font-size: 11px;
+}
+
+.content-right .text{
+    padding-left: 1em;
+}
+
+
+@media only screen and (min-width: 768px){
+        /*Header*/
+#mobile{
+    display: none;
+}
+#pc{
+    display: flex;
+}
+header{
+ display: flex;
+ flex-direction: row;
+ background-color: rgb(32,32,32);
+ height: 56px;
+ width: 100%;
+ min-width: 100%;
+}
+nav{
+ margin: 0;
+ padding: 0;
+ width: 100%;
+ min-width: 200px;
+}
+.left1{
+ display: flex;
+ align-items: center;
+ padding-left: 1.5em;
+ width: 20%;
+}
+
+.center1{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ width: 60%;
+}
+
+.right1{
+ display: flex;
+ align-items: center;
+ justify-content: flex-end;
+ width: 20%;
+}
+
+.logo img{
+ height: 25px;
+ width: 80px;
+ margin-left: 1.5em;
+ padding-top: 0.3em;
+ align-items: center;
+}
+
+sup{
+ padding-bottom: 1em;
+ padding-left: 2px;
+ color:rgb(150,150,150);
+ font-size: 10px;
+}
+
+.center1 input{
+ background-color: rgb(18,18,18);
+ height: 28px;
+ border-style: solid;
+ border-width: 1px;
+ border-radius: 3px;
+ border-color: rgb(49,49,49);
+ outline-color: blue;
+ width: 60%;
+ font-size: 16px;
+}
+
+.center1 input[type=text] {
+ padding-left: 10px;
+}
+
+.center1 button{
+ background-color: rgb(49,49,49);
+ height: 30px;
+ width: 50px;
+ border: 1px;
+ border-radius: 2px;
+ border-style: solid;
+ border-color:  rgb(49,49,49);
+ margin-left: 1px;
+}
+
+.center1 img{
+ height: 20px;
+ padding-top: 2px;
+}
+
+.right1 button{
+ display: flex;
+ border-color: rgb(62,166,255);
+ background-color: transparent;
+ color: rgb(62,166,255);
+ text-transform: uppercase;
+ font-size: 14px;
+ height: 40px;
+ width: 110px;
+ border-style: solid;
+ border-radius: 2px;
+ border-width: 1px;
+ justify-content: center;
+ align-items: center;
+ margin-right: 1em;
+}
+
+.right1 button img{
+ border-radius: 50%;
+ height: 25px;
+ width: 25px;
+ margin-right: 0.5em;
+}
+
+.right1 .img1{
+ margin-right: 1em;
+}
+
+header img, button:hover{
+ cursor: pointer;
+}
+/*main*/
+main{
+ display: flex;
+ flex-direction: row;
+ width: 100%;
+}
+.content-left{
+ width: 70%;
+ margin-right: 0em;
+ margin-left: 0em;
+}
+.content-right{
+ width: 30%;
+ margin-top: 7em;
+ margin-left: -2em;
+}
+main iframe{
+ width: 90%;
+ height: 414px;
+ margin-top: 5.5em;
+ margin-left: 1em;
+}
+.content-left h1{
+ display: flex;
+ font-size: 20px;
+ margin-left: 1.8em;
+ font-weight: 600;
+}
+.content-left span{
+ padding-left: 2em;
+}
+.horizontal{
+ margin-top: 0em;
+ display: flex;
+ justify-content: flex-end;
+}
+
+.horizontal button{
+ border: none;
+ background-color: transparent;
+ color: gray;
+ font-size: 12px;
+ justify-content: space-between;
+ width: 5%;
+ margin-right: 1em;
+}
+.horizontal button:last-child{
+ margin-right: 5em;
+}
+hr{
+ margin-right: 2em;
+ margin-left: 1em;
+}
+.channel .bt1{
+ background-color:rgb(204,0,0);
+ color: white;
+ width: 20%;
+ border-radius: 3px;
+ font-size: 14px;
+ margin-right: 3em;
+}
+.channel .bt0{
+ width: 45%;
+}
+.channel{
+ justify-content: flex-end;
+ justify-content: space-between;
+}
+.content-right .text{
+ padding-left: 0em;
+}
+.content-right .text1{
+ padding-left: 0em;
+}
+    .main{
+        min-width: 768px;
+        max-width: 768px;
+    }
+}
+@media only screen and (min-width: 1080px){
+    /*Header*/
+#mobile{
+    display: none;
+}
+#pc{
+    display: flex;
+   }
+header{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(32,32,32);
+    height: 56px;
+    width: 100%;
+    min-width: 100%;
+}
+nav{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-width: 200px;
+}
+.left1{
+    display: flex;
+    align-items: center;
+    padding-left: 1.5em;
+    width: 20%;
+}
+
+.center1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+}
+
+.right1{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 20%;
+}
+
+.logo img{
+    height: 25px;
+    width: 80px;
+    margin-left: 1.5em;
+    padding-top: 0.3em;
+    align-items: center;
+}
+
+sup{
+    padding-bottom: 1em;
+    padding-left: 2px;
+    color:rgb(150,150,150);
+    font-size: 10px;
+}
+
+.center1 input{
+    background-color: rgb(18,18,18);
+    height: 28px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 3px;
+    border-color: rgb(49,49,49);
+    outline-color: blue;
+    width: 60%;
+    font-size: 16px;
+}
+
+.center1 input[type=text] {
+    padding-left: 10px;
+}
+
+.center1 button{
+    background-color: rgb(49,49,49);
+    height: 30px;
+    width: 50px;
+    border: 1px;
+    border-radius: 2px;
+    border-style: solid;
+    border-color:  rgb(49,49,49);
+    margin-left: 1px;
+}
+
+.center1 img{
+    height: 20px;
+    padding-top: 2px;
+}
+
+.right1 button{
+    display: flex;
+    border-color: rgb(62,166,255);
+    background-color: transparent;
+    color: rgb(62,166,255);
+    text-transform: uppercase;
+    font-size: 14px;
+    height: 40px;
+    width: 110px;
+    border-style: solid;
+    border-radius: 2px;
+    border-width: 1px;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1em;
+}
+
+.right1 button img{
+    border-radius: 50%;
+    height: 25px;
+    width: 25px;
+    margin-right: 0.5em;
+}
+
+.right1 .img1{
+    margin-right: 1em;
+}
+
+header img, button:hover{
+    cursor: pointer;
+}
+/*main*/
+main{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.content-left{
+    width: 70%;
+    margin-right: 0em;
+    margin-left: 0em;
+}
+.content-right{
+    width: 30%;
+    margin-top: 7em;
+    margin-left: 0em;
+}
+main iframe{
+    width: 90%;
+    height: 530px;
+    margin-top: 5.5em;
+    margin-left: 4em;
+}
+.content-left h1{
+    display: flex;
+    font-size: 20px;
+    margin-left: 3.5em;
+    font-weight: 600;
+}
+.content-left span{
+    padding-left: 5em;
+}
+.horizontal{
+    margin-top: 0em;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.horizontal button{
+    border: none;
+    background-color: transparent;
+    color: gray;
+    font-size: 12px;
+    justify-content: space-between;
+    width: 5%;
+}
+.horizontal button:last-child{
+    margin-right: 3.5em;
+}
+hr{
+    margin-right: 2em;
+    margin-left: 4em;
+}
+.channel .bt1{
+    background-color:rgb(204,0,0);
+    color: white;
+    width: 12%;
+    border-radius: 3px;
+    font-size: 14px;
+    margin-right: 3em;
+}
+.channel .bt0{
+    width: 30%;
+}
+.channel{
+    justify-content: flex-end;
+    justify-content: space-between;
+}
+.content-right .text{
+    padding-left: 1em;
+}
+.content-right .text1{
+    padding-left: 0em;
+}
+main{
+    min-width: 1080px;
+    max-width: 1440px;
+    margin: auto auto;
+}
+}
